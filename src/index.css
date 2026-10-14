@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --font-cinzel: 'Cinzel', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, sans-serif;
+  
+  --color-gold-300: #e8c977;
+  --color-gold-400: #d4af37;
+  --color-gold-500: #b8860b;
+  --color-gold-600: #996515;
+  --color-stone-950: #1a1917;
+  --color-stone-900: #24221e;
+  --color-stone-850: #33302b;
+  --color-stone-800: #4a453e;
+  --color-sand-50: #faf8f5;
+  --color-sand-100: #f4efe6;
+  --color-sand-200: #e8e1d5;
+}
+
+/* Custom utility styles */
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-editorial {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+/* Gold foil gradient text for light theme */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #a67c38 0%, #b8860b 50%, #7d5917 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-subtle {
+  border-color: rgba(184, 134, 11, 0.28);
+}
+
+/* Smooth light-theme sand scrollbar */
+::-webkit-scrollbar {
+  width: 9px;
+}
+::-webkit-scrollbar-track {
+  background: #f4efe6;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4c8b6;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b8a892;
+}
